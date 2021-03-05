@@ -4,10 +4,31 @@ html{
 }
 
 header{
-  background-image: url('../images/15129521_1110646779056669_6819884756953635761_o.jpg');  
-  background-attachment: fixed; /* Parallax effect */     
-  background-position: center;  /* Parallax effect */
-  background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover; 
+  background-image: url('../images/15129521_1110646779056669_6819884756953635761_o.jpg'); 
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 
+header > h1{
+  font-size: 60px;
+  color: #000000;
+  text-align: center;
+  font-family: cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+header > p{
+  font-size:20px;
+  color: #000000;
+  font-weight:bold;
+  text-align: center;
+  font-family: cursive;
+  position: absolute;
+  margin-top:400px;
 }
