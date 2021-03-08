@@ -10,6 +10,8 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  filter: brightness(110%);
+  opacity: 0.75;
 }
 
 header > h1{
@@ -20,15 +22,22 @@ header > h1{
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -60%);
 }
 
-header > p{
-  font-size:20px;
-  color: #000000;
-  font-weight:bold;
-  text-align: center;
-  font-family: cursive;
-  position: absolute;
-  margin-top:400px;
+html,body{
+  overflow-x: hidden;
+}
+
+body{
+  position:relative;
+}
+
+.image1{
+  width:400px;
+  height: 300px;
+}
+
+.image2{
+  height:400px;
 }
