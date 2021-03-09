@@ -1,0 +1,87 @@
+/*BEGIN STARTER CSS - DO NOT CHANGE*/
+html{
+    scroll-behavior: smooth;
+}
+
+#main{
+  background-image: url('../images/15129521_1110646779056669_6819884756953635761_o.jpg'); 
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: brightness(110%);
+  opacity: 0.75;
+}
+
+header > h1{
+  font-size: 45px;
+  color: #000000;
+  text-align: center;
+  font-family: cursive;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+html,body{
+  overflow-x: hidden;
+}
+
+body{
+  position:relative;
+}
+
+.image1{
+  width:290px;
+}
+
+.image2{
+  height:400px;
+}
+
+.music{
+  width:310px;
+  margin-top:50px;
+}
+
+#main1{
+  background-image: url('../images/Aerial06.jpg'); 
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: brightness(110%);
+  opacity: 0.75;
+}
+#main2{
+  background-image: url('../images/tambura.jpg'); 
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: brightness(110%);
+  opacity: 0.75;
+}
+
+#main3{
+  background-image: url('../images/Scenic_beauty_3.jpg'); 
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: brightness(110%);
+  opacity: 0.65;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 35%;
+}
