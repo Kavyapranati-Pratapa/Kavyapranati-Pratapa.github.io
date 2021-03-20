@@ -4,7 +4,7 @@ html{
 }
 
 #main{
-  background-image: url('../images/15129521_1110646779056669_6819884756953635761_o.jpg'); 
+  background-image: url('../images/15129700_1110646809056666_8821583787748567642_o-2.jpg'); 
   height: 650px;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,6 +23,11 @@ header > h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
+}
+
+nav{
+  display: flex;
+
 }
 
 html,body{
