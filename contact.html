@@ -6,6 +6,17 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style_portfolio.css">
     <title>Welcome to my Page!</title>
+
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js" type = ""></script>
+      <script>
+      $(function(){
+      $('a').each(function() {
+        if ($(this).prop('href') == window.location.href) {
+          $(this).addClass('current');
+        }
+      });
+    });
+</script>
   </head>
   <body>
     <a class="skip" href="#main">Skip to Main Content</a>
@@ -50,14 +61,3 @@
 </footer>
 </body>
 </html>
-
-<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-<script>
-$(function(){
-  $('a').each(function() {
-    if ($(this).prop('href') == window.location.href) {
-      $(this).addClass('current');
-    }
-  });
-});
-</script>
