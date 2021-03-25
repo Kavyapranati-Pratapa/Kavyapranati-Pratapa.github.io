@@ -55,6 +55,47 @@
     <p class = "ph">+1 (734)-717-9271</p>
 </footer>
 </body>
+
+<script>
+  it ('Checking Accessibility', () => {
+   // inject axe into iframes
+   cy.window()
+   .then((win) => {
+       var iframe = win.document.getElementsByTagName('iframe')[0];
+       console.log('Inject axe into iframe '+iframe.id);
+       var script = iframe.contentWindow.document.createElement("script");
+       script.src = '../js/axe.min.js';
+       script.type = 'text/javascript';
+       iframe.contentWindow.document.body.appendChild(script);
+       //wait(6000);
+       const axe = require('axe-core');
+       return win.axe.run(iframe, { iframes: true} );
+   })
+   .then(({ violations }) => {
+       if (violations.length) {
+           cy.wrap(violations, { log: false }).each(v => {
+               Cypress.log({
+                   name: 'a11y error!',
+                   consoleProps: () => v,
+                   message: `${v.id} on ${v.nodes.length} Node${
+                       v.nodes.length === 1 ? '' : 's'
+                       }`
+               })  
+           })
+       }
+     return cy.wrap(violations, { log: false })
+   })
+   .then(violations => {
+       assert.equal(
+           violations.length,
+           0,
+           `${violations.length} accessibility violation${
+           violations.length === 1 ? '' : 's'
+           } ${violations.length === 1 ? 'was' : 'were'} detected`
+       )
+   })
+});
+</script>
 </html>
 
 
