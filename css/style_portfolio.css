@@ -42,10 +42,11 @@ main > h1{
   transform: translate(-50%, -0%);
 }
 
-.nav_links > ul{
+.nav_links{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  align-items:center;
 }
 
 nav a.current {
