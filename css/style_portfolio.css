@@ -6,7 +6,7 @@ html{
 }
 
 body{
-  background: linear-gradient(#ffcba4, #ffffff);
+  background: linear-gradient(#ffcba4, #fffaf1);
 }
 
 #main{
@@ -252,16 +252,19 @@ footer{
   text-align:center;
   font-family:cursive;
   font-weight: bold;
-  margin-top:10px;
+  margin-top:5px;
+}
+
+footer.about{
+margin-top:-3px;
 }
 
 footer.home{
-  margin-top:15px;
-  background-color:#000000;
-  color:#ffffff;
-  text-align:center;
-  font-family:cursive;
-  font-weight: bold;
+  margin-top:10.5px;
+}
+
+footer.mus, footer.gallery{
+  margin-top:-15px;
 }
 
 .grid-container {
@@ -282,6 +285,7 @@ img.grid-item3{
 iframe{
   margin-top:1.875em;
   width: 100%;
+  filter: contrast(1.15);
 }
 
 form{
