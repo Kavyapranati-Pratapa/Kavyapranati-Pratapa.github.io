@@ -1,10 +1,16 @@
 /*BEGIN STARTER CSS - DO NOT CHANGE*/
+
+@media only screen and (max-width: 600px) {
 html{
     scroll-behavior: smooth;
 }
 
+body{
+  background: linear-gradient(#ffcba4, #ffffff);
+}
+
 #main{
-  background-image: url('../images/15129521_1110646779056669_6819884756953635761_o.jpg'); 
+  background-image: url('../images/homepage.jpg'); 
   height: 650px;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,8 +20,15 @@ html{
   opacity: 0.75;
 }
 
-header > h1{
-  font-size: 45px;
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main > h1{
+  font-size: 2.8125em;
   color: #000000;
   text-align: center;
   font-family: cursive;
@@ -25,10 +38,47 @@ header > h1{
   transform: translate(-50%, -60%);
 }
 
-nav{
+.nav_links{
   display: flex;
-
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
+
+nav a.current {
+  text-decoration:underline #000000 solid 3px;
+}
+
+li a{
+  width: 6.25em;
+  color:#485063;
+  font-family:Raleway;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+
+li a:hover{
+  text-decoration: underline;
+}
+
+p.home_text{
+  font-family: Raleway;
+  font-size: 1.25em;
+  margin-top: 0.625em;
+  margin-bottom: 0.625em;
+  color:#485063;
+  text-align: center;
+}
+
+div p{
+  font-family: Raleway;
+  font-size: 1.25em;
+  margin-top: -0.3125em;
+  margin-bottom: 0.625em;
+  color:#485063;
+  text-align: center;
+}
+
 
 html,body{
   overflow-x: hidden;
@@ -39,16 +89,113 @@ body{
 }
 
 .image1{
-  width:290px;
+  display:flex;
+  width:100%;
+  justify-content:flex-start;
+  align-items:center;
+  margin-left:-100px;
 }
+
 
 .image2{
-  height:400px;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top:30px;
+  margin-left:-50px;
 }
 
+.img_wrap, .img_wrap_2{
+  position: relative;
+  height: 12.5em;
+  width: 16em;
+}
+
+.hover_text{
+  margin-top:-6.25em;
+  margin-left:10em;
+  background: rgba(29, 106, 154, 0.72);
+  color: #ffffff;
+  font-family:cursive;
+  font-size:1.25em;
+  width:6.25em;
+  opacity: 0;
+  visibility: visible;
+}
+
+.hover_text_2{
+  margin-top:-21.25em;
+  margin-left:10.31em;
+  background: rgba(29, 106, 154, 0.72);
+  color: #ffffff;
+  font-family:cursive;
+  font-size:1.25em;
+  width:6.25em;
+  opacity: 0;
+  visibility: visible;
+}
+
+.hover_text:hover .image1{
+  filter: blur(0.3125em);
+}
+
+.hover_text_2:hover .image2{
+  filter: blur(0.3125em);
+}
+
+
+.container{
+  color: white;
+  width: 155px;
+  height: 135px;
+  text-align:center;
+  font-size:30px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0px;
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 305px;
+  margin:-10px auto;
+}
+
+.card:hover img {
+  -webkit-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  filter: blur(2px);
+  transform: scale(1.03);
+}
+
+.card:hover .container {
+  -webkit-opacity: 1;
+  opacity: 1;
+}
+
+
 .music{
-  width:310px;
-  margin-top:50px;
+  display:flex;
+  justify-content: center;
+  width:100%;
+}
+
+.banner{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+  width:100%;
 }
 
 #main1{
@@ -63,10 +210,10 @@ body{
 }
 
 #main2{
-  background-image: url('../images/tambura.jpg'); 
+  background-image: url('../images/381effd5decf16bed19c5bc27500e2fe.jpeg'); 
   height: 650px;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   position: relative;
   filter: brightness(110%);
@@ -84,10 +231,97 @@ body{
   opacity: 0.65;
 }
 
-.row {
-  display: flex;
+#main4{
+  background-image: url('../images/Can-pubs-host-live-music-gigs_wrbm_large.jpeg'); 
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: brightness(110%);
+  opacity: 0.55;
 }
 
-.column {
-  flex: 35%;
+footer{
+  background-color:#000000;
+  color:#ffffff;
+  text-align:center;
+  font-family:cursive;
+  font-weight: bold;
+  margin-top:10px;
 }
+
+footer.home{
+  margin-top:15px;
+  background-color:#000000;
+  color:#ffffff;
+  text-align:center;
+  font-family:cursive;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+img.grid-item{
+  width: 100%;
+  margin-top:1.875em;
+}
+
+img.grid-item3{
+  width:100%;
+  margin-top:20px;
+}
+
+iframe{
+  margin-top:1.875em;
+  width: 100%;
+}
+
+form{
+  margin-left:50px;
+}
+input{
+  width:75%;
+}
+
+#message{
+  width:20.33em;
+  height:15em;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+
+.ph{
+  margin-top:8px;
+}
+.email{
+  margin-top:3px;
+}
+
+#email{
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+#fname{
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+}
+
+.submit{
+  width:9.375em;
+  height:3.125em;
+  background-color:#000000;
+  color:#ffffff;
+  font-weight:bold;
+  border:none;
+  margin-left:70px;
+}
+
+}
+

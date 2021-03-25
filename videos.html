@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style_portfolio.css">
+    <title>Welcome to my Page!</title>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
+    <nav>
+        <ul class = "nav_links">
+          <li><a href = "index.html">Home</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+          <li><a href="music.html">Music</a></li>
+          <ul>
+            <li><a href = "videos.html">Gallery</a></li>
+        </ul>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+&nbsp;
+<main id = "main4">
+    <h1 style = "color:#ffffff;" class = "main_text">Gallery</h1>
+</main>
+
+<div class="grid-container">
+<iframe class = "grid-item"  src="https://www.youtube.com/embed/iMlNjsonOBU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "grid-item"  src="https://www.youtube.com/embed/1MwNzt_yUuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "grid-item" src="https://www.youtube.com/embed/OwJqAcIc5xM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "grid-item"  src="https://www.youtube.com/embed/6nxZk6G1ykU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class = "grid-item"  src="https://www.youtube.com/embed/FSxy0EvROmE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<img class = "grid-item" src = "images/IMGP3627.jpg"/>
+<img class = "grid-item" src = "images/23456661_10155137507526527_2626757407682368665_o.jpg"/>
+<img class = "grid-item" src = "images/56823199_10156277808126527_6894325432464703488_o.jpg"/>
+<img class = "grid-item3" src = "images/89823219_10157110121141527_1361862944773636096_o.jpg"/>
+</div>
+
+&nbsp;
+&nbsp;
+
+<footer>
+    <p>pratapa.kavya @ gmail.com</p>
+    <p class = "ph">+1 (734)-717-9271</p>
+</footer>
+</body>
+</html>
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
+
+
+

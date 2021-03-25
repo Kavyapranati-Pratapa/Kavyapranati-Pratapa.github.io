@@ -4,40 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_portfolio.css">
+    <title>Welcome to my Page!</title>
   </head>
   <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
     <nav>
-        <ul>
-            <li><a href = "/homepage.html">Home</a></li>
-            <li><a href="/about_me.html">About Me</a></li>
-            <li><a href="/music.html">Music</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+        <ul class = "nav_links">
+          <li><a href = "index.html">Home</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+          <li><a href="music.html">Music</a></li>
+          <ul>
+            <li><a href = "videos.html">Gallery</a></li>
+        </ul>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+    </header>
+     
 &nbsp;
-<header id = "main3">
+<main id = "main3">
     <h1 class = "main_text">Contact Me</h1>
-</header>
+</main>
 
 <div class = "row">
-  <form class = "column">
-    <label for="fname">Name:</label><br>
+  <form method = "POST" action = "https://getform.io/f/6b495165-6b3a-4a7e-af47-7b8815d63fcc">
+    <label for="fname">Name</label><br>
     <input type="text" id="fname" name="fname"><br>
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br>
-    <label for="message">Message:</label><br>
-    <input type="text" id="message" name="message"><br>
-  
     <br>
-    <input type="submit" value="Submit">
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email"><br>
+    <br>
+    <label for="message">Message</label><br>
+    <textarea id="message" name="message"></textarea>
+    <br>
+    <input class = "submit" type="submit" value="Submit">
   </form>
   <br>
+</div>
 
-  <div class = "column">
-    <p> Email: pratapa.kavya @ gmail.com</p>
-    &nbsp;
-    <p>Phone #: +1 (734)-717-9271</p>
-  </div>
-</main>
+<footer>
+  <p class = "email">pratapa.kavya @ gmail.com</p>
+  <p class = "ph">+1 (734)-717-9271</p>
+</footer>
+</body>
+</html>
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>

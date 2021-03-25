@@ -4,36 +4,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-
+    <link rel="stylesheet" type="text/css" href="css/style_portfolio.css">
+    <title>Welcome to my Page!</title>
   </head>
   <body>
-    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <a class="skip" href="#main">Skip to Main Content</a>
+    <header>
     <nav>
-        <ul>
-            <li><a href = "/homepage.html">Home</a></li>
-            <li><a href="/about_me.html">About Me</a></li>
-            <li><a href="/music.html">Music</a></li>
-            <li><a href="/contact.html">Contact</a></li>
+        <ul class = "nav_links">
+          <li><a href = "index.html">Home</a></li>
+          <li><a href="about_me.html">About Me</a></li>
+          <li><a href="music.html">Music</a></li>
+          <ul>
+            <li><a href = "videos.html">Gallery</a></li>
+        </ul>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-    <header id = "main1">
-      <h1 class = "main_text">About Me</h1>
     </header>
+
+   <main id = "main1">
+    <h1 class = "main_text">About Me</h1>
+  </main>
     
-    &nbsp;
     <div>
       &nbsp;
-        <p>I am a current senior at the University of Michigan - Ann Arbor pursuing a B.S. in Information with a concentration
+        <p class = "home_text">I am a current senior at the University of Michigan - Ann Arbor pursuing a B.S. in Information with a concentration
         in Data Analytics alongside minors in Business Administration through the Stephen M. Ross School of Business and in History through
-        the College of Literature, Science, and the Arts. Through my coursework at the University and in my professional experiences, I have been able to develop a valuable technical skillset in the areas of web design, data analysis, and visualization as
+        the College of Literature, Science, and the Arts. </p>
+        &nbsp;
+        <p class = "home_text">Through my coursework at the University and in my professional experiences, I have been able to develop a valuable technical skillset in the areas of web design, data analysis, and visualization as
         well as hone my critical thinking capabilities, allowing me to successfully navigate deeper, technical challenges alongside broader strategic initiatives.
         Professionally, I have gained significant corporate experience in the consulting industry. Having interned in Analytics and Business Development for both a financial services and a human capital consulting firm. Through these experiences, I was able to cultivate an entrepreneurial mindset, think critically as I took on important and relevant projects, and develop my leadership and communication skills as I navigated
         challenges in my work. These skills, combined with my enthusiasm and passion for discovering new challenges, allowed me to begin the next phase of my career at Deloitte, where I will be an analyst supporting their consulting practice in the Business & Technology Solutions sector. </p>
         &nbsp;
-        <p>Beyond my professional interests, I am an aspiring musician, having been trained in South Indian Classical Carnatic music for the past 16 years. I have had the opportunity to perform for numerous festivals in the metro-Detroit Area as well as in India. 
-        To learn more about my training and honors that I have received, please visit my music page.</p></div>
-    </div>
+        <p class = "home_text">Beyond my professional interests, I am an aspiring musician, having been trained in South Indian Classical Carnatic music for the past 16 years. I have had the opportunity to perform for numerous festivals in the metro-Detroit Area as well as in India. 
+        To learn more about my training and honors that I have received, please visit my <a href = "music.html">music</a> page.</p></div>
+      </div>
     &nbsp;
     <img src = "images/15137629_1110646725723341_7398167068533258980_o.jpg"/>
+    
+    <footer>
+      <p>pratapa.kavya @ gmail.com</p>
+      <p class = "ph">+1 (734)-717-9271</p>
+  </footer>
+  </body>
+</html>
+
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+<script>
+$(function(){
+  $('a').each(function() {
+    if ($(this).prop('href') == window.location.href) {
+      $(this).addClass('current');
+    }
+  });
+});
+</script>
