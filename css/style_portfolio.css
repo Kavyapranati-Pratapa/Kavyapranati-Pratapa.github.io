@@ -48,6 +48,15 @@ main > h1{
   align-items:center;
 }
 
+@media only screen and (min-width:600px){
+  .nav_links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:center;
+  }
+}
+
 nav a.current {
   text-decoration:underline #000000 solid 3px;
 }
