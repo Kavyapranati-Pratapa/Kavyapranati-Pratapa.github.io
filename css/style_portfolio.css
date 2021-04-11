@@ -35,6 +35,20 @@ main > h1{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -60%);
+  animation-name: slidein;
+  animation-duration: 3s;
+}
+
+@keyframes slidein {
+  from {
+    margin-left:-100px;
+    width: 300%;
+  }
+
+  to {
+    margin-left:40px;
+    width: 100%;
+  }
 }
 
 .main_text{
@@ -51,7 +65,7 @@ main > h1{
 nav a.current {
   text-decoration:underline #000000 solid 3px;
   border-top:ridge;
-  
+  text-transform: uppercase;
 }
 
 li a{
@@ -333,6 +347,8 @@ input{
   margin-left:70px;
 }
 
+}
+
 
 
 @media all and (min-width:600px){
@@ -418,7 +434,8 @@ input{
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
-  }
+}
+
 footer{
   background-color:#000000;
   color:#ffffff;
@@ -426,11 +443,62 @@ footer{
   font-family:cursive;
   font-weight: bold;
   margin-top:215px;
-  }
+}
+
 form{
   margin-top:75px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+img.grid-item{
+  width: 90%;
+  margin-top:1.875em;
 }
+
+img.grid-item3{
+  width:90%;
+  margin-top:20px;
+  grid-column-start: auto;
+}
+
+iframe{
+  margin-top:1.875em;
+  width: 90%;
+  height: 90%;
+  filter: contrast(1.15);
+}
+
+img.grid-item4{
+  width:90%;
+  margin-top:20px;
+  grid-column-start: 2;
+}
+
+iframe.grid-item5{
+  margin-top:1.875em;
+  width: 90%;
+  height: 90%;
+  filter: contrast(1.15);
+  grid-column-start:2;
+}
+
+#main3{
+  background-image: url('../images/Scenic_beauty_3.jpg'); 
+  height: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  filter: brightness(110%);
+  opacity: 0.55;
+}
+ 
+}
+
+
+
 
