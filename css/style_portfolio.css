@@ -112,7 +112,7 @@ body{
   width:100%;
   justify-content:flex-start;
   align-items:center;
-  margin-left:-100px;
+  margin-left:-80px;
 }
 
 
@@ -121,8 +121,7 @@ body{
   display:flex;
   justify-content:center;
   align-items:center;
-  margin-top:30px;
-  margin-left:-50px;
+  margin-top:40px;
 }
 
 .img_wrap, .img_wrap_2{
@@ -349,8 +348,6 @@ input{
 
 }
 
-
-
 @media all and (min-width:600px){
   nav{
     width:100%;
@@ -372,8 +369,8 @@ input{
   }
 
   .about2{
+    display: block;
     margin:auto;
-    display:block;
   }
 
   #first{
@@ -429,11 +426,19 @@ input{
   }
 
 #message{
-  width:80%;
+  width:250%;
   height:15em;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
+}
+
+#email, #fname{
+  width:250%;
+}
+
+.submit{
+  align-items:center;
 }
 
 footer{
@@ -446,7 +451,8 @@ footer{
 }
 
 form{
-  margin-top:75px;
+  margin:30px;
+  display:block;
 }
 
 .grid-container {
@@ -454,21 +460,32 @@ form{
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-img.grid-item{
+img.grid-item1, img.grid-item2{
   width: 90%;
   margin-top:1.875em;
+}
+
+img.grid-item1{
+  height:90%;
+  margin-left:-100px;
+}
+
+img.grid-item2{
+  margin-left:-30px;
+  height:90%;
 }
 
 img.grid-item3{
   width:90%;
   margin-top:20px;
   grid-column-start: auto;
+  margin-left:30px;
 }
 
 iframe{
   margin-top:1.875em;
   width: 90%;
-  height: 90%;
+  height:90%;
   filter: contrast(1.15);
 }
 
@@ -476,6 +493,7 @@ img.grid-item4{
   width:90%;
   margin-top:20px;
   grid-column-start: 2;
+  margin-left:-30px;
 }
 
 iframe.grid-item5{
@@ -484,6 +502,14 @@ iframe.grid-item5{
   height: 90%;
   filter: contrast(1.15);
   grid-column-start:2;
+  margin-left:-180px;
+}
+
+.row1{
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 #main3{
@@ -496,9 +522,50 @@ iframe.grid-item5{
   filter: brightness(110%);
   opacity: 0.55;
 }
- 
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin-top:10px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.image1{
+  margin-left:30px;
+}
+
+.image2{
+  width:115%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-left:40px;
+  margin-top:-20px;
 }
 
 
+footer.home{
+  margin-top:50px;
+}
 
+a.container{
+  margin-left:50px;
+}
 
+.submit{
+  margin-left:350px;
+}
+
+footer.gallery{
+  margin-top:30px;
+}
+ 
+}
