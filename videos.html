@@ -37,23 +37,92 @@
     <h1 style = "color:#ffffff;" class = "main_text">Gallery</h1>
 </main>
 
-<div role = "complementary" class="grid-container">
-  <iframe  class = "grid-item"  src="https://www.youtube.com/embed/iMlNjsonOBU" title="YouTube player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe  class = "grid-item"  src="https://www.youtube.com/embed/1MwNzt_yUuo" title="YouTube player2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe  class = "grid-item" src="https://www.youtube.com/embed/OwJqAcIc5xM" title="YouTube player3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe  class = "grid-item"  src="https://www.youtube.com/embed/6nxZk6G1ykU" title="YouTube player4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  <iframe class = "grid-item5"  src="https://www.youtube.com/embed/FSxy0EvROmE" title="YouTube player5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-  <img  class = "grid-item1" src = "images/IMGP3627.jpg" alt = "Vocal Concert at the Canton Hindu Temple 2017"/>
-  <img  class = "grid-item2" src = "images/23456661_10155137507526527_2626757407682368665_o.jpg" alt = "Performance at the University of Michigan 2017"/>
-  <img  class = "grid-item4" src = "images/56823199_10156277808126527_6894325432464703488_o.jpg" alt = "That Brown Show at the University of Michigan 2019"/>
-  <img  class = "grid-item3" src = "images/89823219_10157110121141527_1361862944773636096_o.jpg" alt = "Vocal Performance in 2020"/>
+<!--
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('videos')"> Videos</button>
+  <button class="btn" onclick="filterSelection('images')"> Images</button>
 </div>
+-->
+
+<div role = "complementary" class="grid-container">
+  <!--div class = "row2">
+    <div class="column videos">
+      <div class="content">
+      -->
+        <iframe  class = "grid-item"  src="https://www.youtube.com/embed/iMlNjsonOBU" title="YouTube player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe  class = "grid-item"  src="https://www.youtube.com/embed/1MwNzt_yUuo" title="YouTube player2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe  class = "grid-item" src="https://www.youtube.com/embed/OwJqAcIc5xM" title="YouTube player3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe  class = "grid-item"  src="https://www.youtube.com/embed/6nxZk6G1ykU" title="YouTube player4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class = "grid-item5"  src="https://www.youtube.com/embed/FSxy0EvROmE" title="YouTube player5" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <!--div class = "row2">
+    <div class="column images">
+      <div class="content">
+    -->
+        <img  class = "grid-item1" src = "images/IMGP3627.jpg" alt = "Vocal Concert at the Canton Hindu Temple 2017"/>
+        <img  class = "grid-item2" src = "images/23456661_10155137507526527_2626757407682368665_o.jpg" alt = "Performance at the University of Michigan 2017"/>
+        <img  class = "grid-item4" src = "images/56823199_10156277808126527_6894325432464703488_o.jpg" alt = "That Brown Show at the University of Michigan 2019"/>
+        <img  class = "grid-item3" src = "images/89823219_10157110121141527_1361862944773636096_o.jpg" alt = "Vocal Performance in 2020"/>
+  </div>
 
 <footer role = "contentinfo" class = "gallery">
     <p>pratapa.kavya @ gmail.com</p>
     <p class = "ph">+1 (734)-717-9271</p>
 </footer>
+
+
+
+
+
+<!---
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+-->
+
 </body>
 </html>
 
