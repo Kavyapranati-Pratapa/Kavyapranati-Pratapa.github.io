@@ -73,12 +73,15 @@ section > h1{
     animation-name: none;
   }  
     
-  .flip-card:hover, .flip-card-inner, .flip-card-front, .flip-card-back{
-      transform: none;
-      transition: none;
-      -webkit-transition: none; /* sets to default setting */
-      visibility: hidden;
-    }
+  
+  .flip-card-back, .flip-card:hover, .flip-card-front, .flip-card-inner{
+    transform: none;
+    transition: none;
+    -webkit-transition: none;  
+    pointer-events: none;
+    transform-style:none;
+    perspective: 0px;/* sets to default setting */
+  }
 
   html{
     scroll-behavior: auto; /* Removes scroll animation */
@@ -87,6 +90,10 @@ section > h1{
   .skip a{
     -webkit-transition: none; /* sets to default setting */
     transition: none;        /* sets to default setting */
+  }
+
+  header{
+    background-attachment: initial;
   }
   
 }
@@ -127,6 +134,7 @@ p.home_text{
   margin-bottom: 0.625em;
   color:#485063;
   text-align: center;
+  line-height:30px;
 }
 
 div p{
@@ -503,6 +511,7 @@ form{
   p.home_text{
     text-align:left;
     padding-left:35px;
+    line-height:30px;
 }
 
 #contact-form{
