@@ -71,7 +71,24 @@ section > h1{
 @media (prefers-reduced-motion) {
   .animation {
     animation-name: none;
+  }  
+    
+  .flip-card:hover, .flip-card-inner, .flip-card-front, .flip-card-back{
+      transform: none;
+      transition: none;
+      -webkit-transition: none; /* sets to default setting */
+      visibility: hidden;
+    }
+
+  html{
+    scroll-behavior: auto; /* Removes scroll animation */
   }
+
+  .skip a{
+    -webkit-transition: none; /* sets to default setting */
+    transition: none;        /* sets to default setting */
+  }
+  
 }
 
 .main_text{
