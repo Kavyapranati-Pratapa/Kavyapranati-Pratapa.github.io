@@ -211,6 +211,7 @@ body{
 }
 
 
+
 a.container{
   color: white;
   width: 155px;
@@ -718,7 +719,6 @@ iframe.grid-item5{
     margin-bottom: 30px;
     margin-top:15px;
     margin-left:15px;
-
 }
 .filter-button:hover{
 
@@ -728,8 +728,9 @@ iframe.grid-item5{
     text-align: center;
     color: #000000;
     background-color: #bbb;
-
+    border:3px;
 }
+
 .btn-default:active .filter-button:active{
     background-color: #42B32F;
     color: white;
