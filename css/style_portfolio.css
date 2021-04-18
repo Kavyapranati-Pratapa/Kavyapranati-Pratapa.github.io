@@ -399,37 +399,7 @@ form{
   background: #000000;
   color: white;
 }
-
-@media (prefers-reduced-motion) {
-  .animation {
-    animation-name: none;
-  }  
   
-  .flip-card-back, .flip-card:hover, .flip-card-front, .flip-card-inner{
-    transform: none;
-    transition: none;
-    -webkit-transition: none;  
-    pointer-events: none;
-    transform-style:none;
-    perspective: 0px;/* sets to default setting */
-  }
-
-  #main1{
-    background-attachment: scroll;
-  }
-
-  .skip a{
-    -webkit-transition: none; /* sets to default setting */
-    transition: none;        /* sets to default setting */
-  }
-
-  header{
-    background-attachment: initial;
-  }
-  
-}
-
-
 @media all and (min-width:600px){
   nav{
     width:100%;
@@ -758,6 +728,10 @@ iframe.grid-item5{
   .list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .capitalise:hover{
+    text-transform:uppercase;
   }
   
   img.grid-item1, img.grid-item2{
