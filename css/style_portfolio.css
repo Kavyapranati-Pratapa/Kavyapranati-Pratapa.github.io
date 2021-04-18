@@ -692,7 +692,7 @@ iframe.grid-item5{
     border:3px solid #000000;
 }
 
-.capitalise:hover{
+.capitalise:focus{
   text-transform:uppercase;
 }
 
@@ -730,7 +730,7 @@ iframe.grid-item5{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
-  .capitalise:hover{
+  .capitalise:focus{
     text-transform:uppercase;
   }
   

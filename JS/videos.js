@@ -8,6 +8,7 @@ $(document).ready(function(){
             //$('.filter').removeClass('hidden');
             $('.filter').show('3000');
             $(this).addClass('capitalise').show('3000');
+            
         }
         else if (value == "images")
         {
@@ -17,6 +18,7 @@ $(document).ready(function(){
             $(this).addClass('capitalise').show('3000');
             $(".filter").not('.'+value).hide('3000');
             $('.filter').filter('.'+value).show('3000');
+            $(".filter").removeClass('capitalise');
         }
         else
         {
@@ -28,7 +30,6 @@ $(document).ready(function(){
     
     if ($(".filter-button").removeClass("active")) {
     $(this).removeClass("active");
-    $(this).removeClass('capitalise').show('3000');
     }
     $(this).addClass("active");
     
