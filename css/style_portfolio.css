@@ -76,9 +76,9 @@ section > h1{
   align-items:center;
 }
 
-nav a.current {
+.current {
   text-decoration:underline #000000 solid 3px;
-  border-top:ridge;
+  border-top:#000000 ridge;
   text-transform: uppercase;
 }
 
@@ -284,6 +284,7 @@ footer{
   font-family:cursive;
   font-weight: bold;
   margin-top:5px;
+  padding-top:5px;
 }
 
 footer.about{
@@ -799,9 +800,6 @@ iframe.grid-item5{
   }
 
   @media (prefers-reduced-motion) {
-    .animation {
-      animation-name: none;
-    }  
     
     .flip-card:hover .flip-card-inner,
     .flip-card:focus-within .flip-card-inner,
@@ -813,6 +811,17 @@ iframe.grid-item5{
       pointer-events: none;
       transform-style:none;
       perspective: 0px;/* sets to default setting */
+  }
+
+  #slidein{
+    animation:none;
+    animation-duration:0s;
+  }
+
+  section > h1{
+    animation-duration: 0s;
+    transition:none;
+    -webkit-transition:none;
   }
   
     #main1, #first{
