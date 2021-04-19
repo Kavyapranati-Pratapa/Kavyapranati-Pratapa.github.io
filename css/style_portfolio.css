@@ -400,6 +400,33 @@ form{
   background: #000000;
   color: white;
 }
+
+.filter-button{
+  font-size: 20px;
+  border: 3px solid #000000;
+  background-color:#ffffff;
+  border-radius: 0px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top:15px;
+  margin-left:15px;
+}
+.filter-button:hover{
+
+  font-size: 20px;
+  border: none;
+  border-radius: 0px;
+  text-align: center;
+  color: #000000;
+  background-color: #bbb;
+  border:3px solid #000000;
+}
+
+.capitalise:focus{
+  text-transform:uppercase;
+}
+
   
 @media all and (min-width:600px){
   nav{
@@ -823,7 +850,7 @@ iframe.grid-item5{
     transition:none;
     -webkit-transition:none;
   }
-  
+
     #main1, #first{
       background-attachment: scroll;
     }
